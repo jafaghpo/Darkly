@@ -1,0 +1,3 @@
+On the recover page, we inspected the submit button and modified the value of the POST form and inserted our email in it
+
+To prevent this, don't use important informations as form attributes and do it on the server side instead

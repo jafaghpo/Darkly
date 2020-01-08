@@ -1,0 +1,5 @@
+We downloaded a chrome extension named EditThisCookie and found that there was a cookie named I_am_admin with an md5 hash value.
+So we used a md5 decryption website to find the initial value and found 'false'
+Considering the name of the cookie, we replaced its value by the md5 hash of 'true' and saved it
+
+To prevent this, don't store admin session in cookies and use HTTPS instead of HTTP
