@@ -1,1 +1,8 @@
-cat folder/README.15794
+In the robots.txt file, we also saw a folder named .hidden.
+We then tried to download its content via the wget command but there was too many README file with small sentences.
+Our guess was that one of the files contained a clue for finding the flag (or in this case the flag itself)
+so we created a script that searched for an expression with digits and letters like an md5 hash
+
+We finally found the flag in the file 'README.15794'
+
+To prevent this, protect your folders with a .htaccess file

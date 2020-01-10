@@ -1,0 +1,7 @@
+We checked if there is any robots.txt file on the site (file that gives instructions to web robots).
+We saw that there was 2 folders, /whatever and /.hidden and that the former contained a htpasswd file with
+root:8621ffdbc5698829397d97767ac13db3 in it.
+So we supposed that this was an md5 hash password and decryted it to find the name 'dragon'
+Then, we went on the /admin page via url and entered 'root' as the id and 'dragon' as the password
+
+To prevent this, don't put sensitive info in robots.txt file and protect your folders with a .htaccess file

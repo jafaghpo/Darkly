@@ -1,0 +1,5 @@
+On the feedback page, we saw that a javascript function was called when submitting the form
+so we typed 'script' in the name field to mess with the html script tag of the page
+
+To prevent this, either escape chars in HTML ('<' and '>' for example)
+of check if there is any malicious command like script in strings

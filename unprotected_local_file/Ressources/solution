@@ -1,0 +1,4 @@
+Since most web servers run on linux distros, we tried to access the /etc/passwd file via the url path
+After triyng with ?page=../../../../../../../etc/passwd, we succesfully managed to access the file
+
+To prevent this, protect your folders with a .htaccess file
