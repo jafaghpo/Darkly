@@ -1,0 +1,7 @@
+On the borntosec redirect wich lead to an albatroz picture, you can find while inspecting the htlm some comments that tells you to be comming from "https://www.nsa.gov/" and to use the browser "ft_bornToSec".
+
+You just have to modify your User-Agent and add a referer to match the instructions.
+
+I used a curl -A or --user-agent and -e or --referer to match the conditions
+
+curl -s -A 'ft_bornToSec' -e "https://www.nsa.gov/" "http://172.20.10.12/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c"
