@@ -23,3 +23,5 @@ Surname : 5ff9d0165b4f92b14994e5c685cdce28
 I then searched the password and google and found that it was "FortyTwo" hashed with MD5.
 
 I hashed "fortytwo" with sha256 and then got the flag
+
+To prevent this, check the sql query by using a "prepare" function

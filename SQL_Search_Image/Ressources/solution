@@ -19,3 +19,5 @@ wich lead me to this comment "If you read this just use this md5 decode lowercas
 I searched google with the md5 code and found that it was "albatroz"
 
 I then hashed albatroz with sha256 and got the flag
+
+To prevent this, check the sql query by using a "prepare" function
