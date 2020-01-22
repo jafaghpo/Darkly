@@ -1,0 +1,5 @@
+When clicking on the nsa picture on the front page, we saw that the url was a GET method with an src attribute.
+We guessed that the attribute value was not checked so we tried to inject some js script encoded in base64 like so:
+?page=media&src=data:text/html;base64,PHNjcmlwdD5hbGVydCjigJlYU1PigJkpPC9zY3JpcHQ+
+
+To prevent this, either sanitize the value of the attribute or use ids that link to pictures in your database
