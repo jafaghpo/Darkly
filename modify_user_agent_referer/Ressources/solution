@@ -5,6 +5,6 @@ You just have to modify your User-Agent and add a referer to match the instructi
 
 I used a curl -A or --user-agent and -e or --referer to match the conditions
 
-curl -s -A 'ft_bornToSec' -e "https://www.nsa.gov/" "http://172.20.10.12/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c"
+curl -s -A 'ft_bornToSec' -e "https://www.nsa.gov/" "http://MY_IP_ADRESS/?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c"
 
 To prevent this, simply don't do sensible actions depending on the user agent and the referer

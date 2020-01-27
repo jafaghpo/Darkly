@@ -30,5 +30,5 @@ function find_flag($base_url)
     }
   }
 }
-find_flag("http://10.11.200.28/.hidden/");
+find_flag("http://MY_IP_ADRESS/.hidden/");
 ?>
