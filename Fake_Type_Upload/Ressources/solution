@@ -1,4 +1,4 @@
-On the upload page, you can upload a file, and change the type of upload data.
+On the upload page, you can upload a image file, but you can input any file and change the type of upload data.
 
 I created a test.php file and used curl for the POST request.
 
